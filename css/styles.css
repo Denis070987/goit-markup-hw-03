@@ -14,6 +14,14 @@
   /*others*/
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
@@ -41,12 +49,11 @@ p {
   margin: 0;
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200;
+
+
+
+img {
+  display: block;
 }
 
 /*header section*/
@@ -197,25 +204,12 @@ p {
 .advant-container {
   padding-top: 94px;
 }
-
 .advant-list {
   display: flex;
+  gap: 30px;
 }
-
 .advant-title {
   margin-bottom: 10px;
-}
-
-.advant-item {
-  margin-left: 30px;
-}
-
-.advant-item:first-child {
-  margin-left: 215px;
-}
-
-.advant-item:last-child {
-  margin-right: 215px;
 }
 
 .advant-title {
@@ -226,13 +220,11 @@ p {
   text-transform: uppercase;
   color: var(--main-txt-cl);
 }
-
 .advant-text {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
-
 }
 
 .visually-hidden {
@@ -249,22 +241,87 @@ p {
   overflow: hidden;
 }
 
+/*doing section*/
+.doing-container {
+  
+  padding-top: 94px;
+}
+
+
+.doing-title {
+  font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+  padding-bottom: 50px;
+}
+
+.doing-list {
+  display: flex;
+  
+}
+.doing-item {
+  width: 370px;
+}
+
+
+
+
+
 /*team section*/
+.team-container {
+  padding-top: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+.team-wrapper {
+  border: 1px solid transparent;
+  border-top: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 0px 1px 3px 
+  rgba(0, 0, 0, 0.12), 0px 1px 1px 
+  rgba(0, 0, 0, 0.14), 0px 2px 1px 
+  rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-title {
+  margin-bottom: 8px;
   font-weight: 500;
-  font-size: 16px;
   line-height: calc(19 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+.team-list {
+  max-width: 1200px;
+  display: flex;
+  gap: 30px;
+  
 }
 
 .team-text {
   line-height: calc(19 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
 .team-item {
+  flex-basis: calc((100% - 30px *3) / 4)
   background-color: #ffffff;
 }
 
